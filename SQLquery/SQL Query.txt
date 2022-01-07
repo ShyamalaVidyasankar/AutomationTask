@@ -1,0 +1,7 @@
+SELECT c.name, 
+       Count(u.citiizenship_country_id) AS W1
+ FROM countries c
+      INNER JOIN users u ON c.id = u.citizenship_country_id
+GROUP BY c.name
+HAVING Count(u.citiizenship_country_id)>1000
+ORDER BY W1 desc
