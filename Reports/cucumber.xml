@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="8.050418">
+<testcase classname="API Automation for reqres application" name="Verify get list of user api endpoint" time="7.095654">
+<system-out><![CDATA[When User send get request with 'https://reqres.in/api/users?page=2'........passed
+Then User verify json path 'page' and value '2' present in the response.....passed
+]]></system-out>
+</testcase>
+<testcase classname="API Automation for reqres application" name="Verify add user to list" time="0.954764">
+<system-out><![CDATA[When User send post request with 'https://reqres.in/api/users' with body '{"name": "morpheus","job": "leader"}'.passed
+Then User verify json path 'name' and value 'morpheus' present in the response.passed
+]]></system-out>
+</testcase>
+</testsuite>
